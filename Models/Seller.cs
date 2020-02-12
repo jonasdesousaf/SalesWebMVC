@@ -18,14 +18,13 @@ namespace SalesWebMVC.Models
         {
         }
 
-        public Seller(int id, string name, string email, DateTime birthDate, double baseSalary, ICollection<SalesRecord> sales, Departament departament)
+        public Seller(int id, string name, string email, DateTime birthDate, double baseSalary, Departament departament)
         {
             Id = id;
             Name = name;
             Email = email;
             BirthDate = birthDate;
             BaseSalary = baseSalary;
-            Sales = sales;
             Departament = departament;
         }
 

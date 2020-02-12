@@ -14,11 +14,10 @@ namespace SalesWebMVC.Models
         {
         }
 
-        public Departament(int id, string name, ICollection<Seller> sellers)
+        public Departament(int id, string name)
         {
             Id = id;
             Name = name;
-            Sellers = sellers;
         }
 
         public void addSeller(Seller seller)
