@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using SalesWebMVC.Models;
 
-    public class SallesWebMVCContext : DbContext
+    public class SalesWebMVCContext : DbContext
     {
-        public SallesWebMVCContext (DbContextOptions<SallesWebMVCContext> options)
+        public SalesWebMVCContext (DbContextOptions<SalesWebMVCContext> options)
             : base(options)
         {
         }
