@@ -14,9 +14,15 @@ namespace SalesWebMVC.Services
             _context = context;
         }
 
-        public List<Seller> findAll()
+        public List<Seller> FindAll()
         {
             return _context.Seller.ToList();
+        }
+
+        public void Insert(Seller seller)
+        {
+            _context.Seller.Add(seller);
+            _context.SaveChanges();
         }
     }
 }

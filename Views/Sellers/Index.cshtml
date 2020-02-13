@@ -6,9 +6,13 @@
 
 <h2>@ViewData["Title"]</h2>
 
+<p>
+    <a class="btn btn-default" asp-action="Create">Create New</a>
+</p>
+
 <table class="table table-hover table-stripped">
     <thead>
-        <tr>
+        <tr class="success">
             <th>
                 @Html.DisplayNameFor(model => model.Name)
             </th>
@@ -21,6 +25,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.BaseSalary)
             </th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -38,6 +43,11 @@
             </td>
             <td>
                 @Html.DisplayFor(model => item.BaseSalary)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
         }
