@@ -32,5 +32,6 @@
     <Folder Include="Models\Enums\" />
     <Folder Include="Views\Sellers\" />
     <Folder Include="Services\" />
+    <Folder Include="Services\Exceptions\" />
   </ItemGroup>
 </Project>
