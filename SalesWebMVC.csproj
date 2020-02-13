@@ -30,5 +30,7 @@
   <ItemGroup>
     <Folder Include="Models\ViewModels\" />
     <Folder Include="Models\Enums\" />
+    <Folder Include="Views\Sellers\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 </Project>
